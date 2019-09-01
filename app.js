@@ -38,4 +38,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.locals.duLieuJson = require('./model/dulieu.json');
 module.exports = app;
