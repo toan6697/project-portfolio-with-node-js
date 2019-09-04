@@ -23,19 +23,19 @@
 			<ul class="ish-portfolio-item ish-portfolio-filter">
 				<li class="ish-portfolio-filter__item ish-portfolio-filter--title"><h5>Filter:</h5></li>
 				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link ish-portfolio-filter__link--active" href="#all">All</a></li>
-				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link" href="#print">Print</a></li>
-				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link" href="#identity">Identity</a></li>
-				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link" href="#mockup">Mockup</a></li>
-				<li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link" href="#application">Application</a></li>
+				<% duLieuJson.sanpham.forEach(function(item){ %>
+                     <li class="ish-portfolio-filter__item"><a class="ish-portfolio-filter__link" href="<%= item.category %>"><%= item.category %></a></li>
+				<% }) %>
+
 			</ul>
 			<% duLieuJson.sanpham.forEach(function(item){ %>
-				<a class="ish-portfolio-item ish--tc13 ish-portfolio-print" href="#">
+				<a class="ish-portfolio-item ish--tc13 ish-portfolio-<%= item.category %>" href="chi-tiet-sp-<%= item.id %>">
 					<div class="ish-portfolio-item__image-container">
 						<img class="ish-portfolio-item__image" src="<%= item.avatar %>" alt="business cards">
 					</div>
 					<div class="ish-portfolio-item__desc">
-						<span class="ish-portfolio-item__title">Business Cards</span>
-						<span class="ish-portfolio-item__subtitle">Print</span>
+						<span class="ish-portfolio-item__title"><%= item.title %></span>
+						<span class="ish-portfolio-item__subtitle"><%= item.category %></span>
 					</div>
 				</a>
 			<% }) %>

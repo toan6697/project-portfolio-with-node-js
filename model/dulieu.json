@@ -19,7 +19,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed consectetur diam. Sed accumsan sodales turpis, nec dapibus augue venenatis ullamcorper. Ut quis arcu non quam tincidunt suscipit. In hac habitasse platea dictumst. Mauris accumsan ex sed lacus condimentum, quis tempus nulla porttitor. Nunc dictum libero sit amet nisi euismod faucibus. Proin non efficitur augue, faucibus tempor purus.",
       "client": "devin dev",
       "role": "coder app",
-      "category": "design",
+      "category": "branding",
       "link": "http://google.com"
     },
     {
@@ -30,7 +30,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed consectetur diam. Sed accumsan sodales turpis, nec dapibus augue venenatis ullamcorper. Ut quis arcu non quam tincidunt suscipit. In hac habitasse platea dictumst. Mauris accumsan ex sed lacus condimentum, quis tempus nulla porttitor. Nunc dictum libero sit amet nisi euismod faucibus. Proin non efficitur augue, faucibus tempor purus.",
       "client": "kevin dev",
       "role": "coder ai",
-      "category": "design",
+      "category": "coderweb",
       "link": "http://google.com"
     }
   ]
