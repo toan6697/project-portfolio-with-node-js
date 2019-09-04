@@ -1,0 +1,47 @@
+
+
+<% include template/header %>
+
+		<!-- lead -->
+		<a class="ish-row ish-fullrow ish-lead" href="portfolio-detail1.html">
+			<span class="ish-lead__caption ish-icon-up">Featured Portfolio</span>
+			<div class="ish-lead__image">
+				<img src="./images/header.jpg" alt="work in silent">
+			</div>
+			<h1 class="ish-lead__headline">
+				<span class="ish-lead__headline-inner">Workin<br>Silent</span>
+			</h1>
+		</a>
+		<!-- lead end -->
+
+
+
+		<!-- content -->
+		<div class="ish-row ish-content ish-portfolio ish-macy">
+
+      <!-- main content -->
+			<%
+            if (typeof productIds !== 'undefined' && productIds.length > 0) {
+             productIds.forEach(function(idsp){ %>
+              <%  duLieuJson.sanpham.forEach(function(item){ %>
+                   <% if(idsp == item.id){
+                %>
+				<a class="ish-portfolio-item ish--tc13 ish-portfolio-<%= item.category %>" href="chi-tiet-sp-<%= item.id %>">
+					<div class="ish-portfolio-item__image-container">
+						<img class="ish-portfolio-item__image" src="<%= item.avatar %>" alt="business cards">
+					</div>
+					<div class="ish-portfolio-item__desc">
+						<span class="ish-portfolio-item__title"><%= item.title %></span>
+						<span class="ish-portfolio-item__subtitle"><%= item.category %></span>
+					</div>
+				</a>
+                <% }}) %>
+			<% })} %>
+			
+			
+      <!-- main content end -->
+		</div>
+		<!-- content end -->
+
+
+		<% include template/footer %>
